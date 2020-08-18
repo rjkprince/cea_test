@@ -10,3 +10,12 @@
 .cartImg {
   width: 70px;
 }
+.CartHolder {
+  position: relative;
+}
+.Total {
+  font-size: 20px;
+  position: absolute;
+  top: 0px;
+  left: 30px;
+}

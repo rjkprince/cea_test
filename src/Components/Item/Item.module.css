@@ -1,0 +1,36 @@
+.ItemWrapper {
+  display: flex;
+  height: 40px;
+  align-items: center;
+}
+.Btn {
+  font-weight: 700;
+  border: none;
+  height: 30px;
+  color: white;
+  background: rgb(66, 66, 66);
+  margin: 0 5px;
+  padding: 5px 15px;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+.Zero {
+  background: rgb(231, 171, 30);
+  color: black;
+  margin: 0;
+  padding: 2px 15px;
+  height: 25px;
+  cursor: auto;
+  width: 70px;
+  text-align: center;
+}
+.DltBtn {
+  color: white;
+  background: red;
+  cursor: pointer;
+}
+.nonZero {
+  background: rgb(0, 204, 255);
+  color: white;
+}

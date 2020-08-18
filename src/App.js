@@ -1,26 +1,31 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import Item from './Components/Item/Item';
+import Header from './Components/Header/Header';
+import classes from './App.module.css';
+import { Component } from 'react';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends Component {
+  state = {
+    Items: [
+      <Item key={1} id={1} deletehandler={this.deleteHandler} />,
+      <Item key={2} id={2} deletehandler={this.deleteHandler} />,
+      <Item key={3} id={3} deletehandler={this.deleteHandler} />,
+      <Item key={4} id={4} deletehandler={this.deleteHandler} />,
+    ],
+  };
+
+  deleteHandler = (e) => {
+    console.log(e);
+  };
+
+  render() {
+    return (
+      <div>
+        <Header />
+        <div className={classes.ItemCont}>{this.state.Items}</div>
+      </div>
+    );
+  }
 }
 
 export default App;
